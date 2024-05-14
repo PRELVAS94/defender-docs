@@ -104,6 +104,13 @@ It's recommended to initially exclude:
 - SAP ASE – contact SAP
 - MaxDB – contact SAP
 
+Anything related to 3rd Party Applications used by SAP such as Avantra and Commvault also need to be excluded as per best pratice
+
+Usually these installations live by default under /opt, however check your systems to ensure that it's working
+
+- /opt/Avantra
+- /opt/Commvault
+
 Oracle ASM systems don't need exclusions as Microsoft Defender for Endpoint can't read ASM disks.
 
 Customers with Pacemaker clusters should also configure these exclusions:
